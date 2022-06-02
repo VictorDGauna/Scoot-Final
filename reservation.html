@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Final Project -Scoots- by Victor Daniel Gauna">
+    <link rel="stylesheet" href="../finalproject/css/normalize.css">
+    <link rel="stylesheet" href="../finalproject/css/small.css">
+    <link rel="stylesheet" href="../finalproject/css/medium.css">
+    <link rel="stylesheet" href="../finalproject/css/large.css">
+    <link rel="icon" href="../finalproject/img/scooter.png">
+    <title>Scoots</title>
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="../finalproject/img/scooter.png" alt="icon">
+
+            <div class="box-text">
+
+                <h1>Scoots</h1>
+                <h3>Rent Your Adventur</h3>
+            </div>
+        </picture>
+        <div class="call-action">
+            <h2>What Are You Waiting For Your Adventure?</h2>
+            <a href="#"> Click and Rent Now!!</a>
+        </div>
+
+        <ul>
+            <li>
+                <a href="https//:www.facebook.com"><img src="../finalproject/img/facebook (1).png" alt="facebook"></a>
+                <a href="htpps//:www.youtube.com"><img src="../finalproject/img/youtube (1).png" alt="youtube"></a>
+                <a href="https//:www.twitter.com"><img src="../finalproject/img/gorjeo.png" alt="twitter"></a>
+            </li>
+        </ul>
+    </header>
+    <nav class="clearfix">
+        <button id="menuBtn">&#9776; Menu</button>
+        <ul id="primaryNav">
+            <li><a href="../finalproject/index.html">Home</a></li>
+            <li><a href="../finalproject/rental.html">Rentals</a></li>
+            <li class="active"><a href="#">Reservations</a></li>
+            <li><a href="../finalproject/tour.html">Tours</a></li>
+            <li><a href="../finalproject/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="banner">
+            <picture>
+
+                <source media="(min-width:500px) and (max-width:799px)" srcset="../finalproject/img/cazumel-medium.png">
+                <source media="(min-width:800px)" srcset="../finalproject/img/cazumel-large.png">
+
+                <img src="../finalproject/img/cazumel-small.png" alt="banner" class="banner-img">
+
+            </picture>
+            <div class="weatherSumary">
+                <h3><span id="city-name"></span></h3>
+                <ul>
+                    <li>Currently: <span id="desc"></span></li>
+                    <li>High: <span id="High"></span> °F</li>
+                    <li>Wind Chill: <span id="wind"></span> °F</li>
+                    <li>Humidity: <span id="hum"></span>%</li>
+                    <li>Wind Speed: <span id="speed"></span> mph</li>
+                </ul>
+
+
+            </div>
+        </section>
+        <h2 class="reser">Reservation Form</h2>
+        <hr>
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>
+                    <h3>Your Information</h3>
+                </legend>
+                <label class="personalInfo">
+            *Full Name: <input type="text" name="fullname" title="Please have at least 5 letters entered" placeholder="abcdef" pattern="^[a-zA-Z\s\-\.]{5,}$" required>
+            </label>
+                <label class="personalInfo">
+            Email: <input type="email" name="email" placeholder="info@whatweather.com">
+            </label>
+                <label class="personalInfo">
+            *Phone: <input type="tel" name="phone" title="Please write 10 numbers or more" placeholder="123-456-7890" required>
+            </label>
+                <label class="personalInfo">
+            Country: <input type="tel" name="phone" title="Please write 10 numbers or more" placeholder="abcdef"pattern="^[a-zA-Z\s\-\.]{5,}$" required>
+
+            </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Reservation Information</h3>
+                </legend>
+                <label class="storm-info">
+            Reservation Date: <input type="date" name="storm_date">
+            <label class="storm-info">
+                Since Date: <input type="date" name="storm_date">
+                </label>
+                <label class="storm-info">
+                Until Date: <input type="date" name="storm_date">
+                </label>
+                </label>
+                <label class="storm-info">
+                    Rentals Type: <input type="date" name="storm_date">
+                    </label>
+
+                <label class="storm-info">
+             Number:
+              <input type="range" name="storm_severity" min="1" max="10" step="1" value="5" list="ranges" oninput="severity(this.value)" onchange="severity(this.value)">
+              <span id="value">5</span>
+            </label>
+                <datalist id="ranges">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="1o"></option>
+
+            </datalist>
+
+                </label>
+                <input class="submit_button" type="submit" value="Send">
+
+            </fieldset>
+
+
+
+
+        </form>
+
+    </main>
+    <footer>
+        <p id="box-footer">
+            &copy;<span id="currentYear"></span> | Victor Daniel Gauna | Argentina |
+            <a id="byui" href="https://www.byui.edu/online">BYUI</a> Online Learning |
+        </p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <a href="https://www.flaticon.es/iconos-gratis/youtube" title="youtube iconos">Youtube iconos creados por Fathema Khanom - Flaticon</a>
+        <a href="https://www.flaticon.es/iconos-gratis/gorjeo" title="gorjeo iconos">Gorjeo iconos creados por Md Tanvirul Haque - Flaticon</a>
+        <a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook iconos">Facebook iconos creados por Pixel perfect - Flaticon</a>
+        <a href="https://www.flaticon.es/iconos-gratis/scooter" title="scooter iconos">Scooter iconos creados por Good Ware - Flaticon</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Lato", "Oswald", "Koulen"],
+            },
+        });
+    </script>
+    <script src="../finalproject/js/toggleMenu.js"></script>
+    <script src="../finalproject/js/currentDate.js"></script>
+    <script src="../finalproject/js/weatherapi.js"></script>
+
+</body>
+
+</html>

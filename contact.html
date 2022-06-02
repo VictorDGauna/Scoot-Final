@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Final Project -Scoots- by Victor Daniel Gauna">
+    <link rel="stylesheet" href="../finalproject/css/normalize.css">
+    <link rel="stylesheet" href="../finalproject/css/small.css">
+    <link rel="stylesheet" href="../finalproject/css/medium.css">
+    <link rel="stylesheet" href="../finalproject/css/large.css">
+    <link rel="icon" href="../finalproject/img/scooter.png">
+    <title>Scoots</title>
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="../finalproject/img/scooter.png" alt="icon">
+
+            <div class="box-text">
+
+                <h1>Scoots</h1>
+                <h3>Rent Your Adventur</h3>
+            </div>
+        </picture>
+        <div class="call-action">
+            <h2>What Are You Waiting For Your Adventure?</h2>
+            <a href="#"> Click and Rent Now!!</a>
+        </div>
+
+        <ul>
+            <li>
+                <a href="https//:www.facebook.com"><img src="../finalproject/img/facebook (1).png" alt="facebook"></a>
+                <a href="htpps//:www.youtube.com"><img src="../finalproject/img/youtube (1).png" alt="youtube"></a>
+                <a href="https//:www.twitter.com"><img src="../finalproject/img/gorjeo.png" alt="twitter"></a>
+            </li>
+        </ul>
+    </header>
+    <nav class="clearfix">
+        <button id="menuBtn">&#9776; Menu</button>
+        <ul id="primaryNav">
+            <li><a href="../finalproject/index.html">Home</a></li>
+            <li><a href="../finalproject/rental.html">Rentals</a></li>
+            <li><a href="../finalproject/reservation.html">Reservations</a></li>
+            <li><a href="../finalproject/tour.html">Tours</a></li>
+            <li class="active"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="banner">
+            <picture>
+
+                <source media="(min-width:500px) and (max-width:799px)" srcset="../finalproject/img/cazumel-medium.png">
+                <source media="(min-width:800px)" srcset="../finalproject/img/cazumel-large.png">
+
+                <img src="../finalproject/img/cazumel-small.png" alt="banner" class="banner-img">
+
+            </picture>
+            <div class="weatherSumary">
+                <h3><span id="city-name"></span></h3>
+                <ul>
+                    <li>Currently: <span id="desc"></span></li>
+                    <li>High: <span id="High"></span> °F</li>
+                    <li>Wind Chill: <span id="wind"></span> °F</li>
+                    <li>Humidity: <span id="hum"></span>%</li>
+                    <li>Wind Speed: <span id="speed"></span> mph</li>
+                </ul>
+
+
+            </div>
+        </section>
+        <section class="contact">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59789.577536067176!2d-86.97138272832785!3d20.51243197837712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Q.R.%2C%20M%C3%A9xico!5e0!3m2!1ses!2sar!4v1654143400244!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="contact-us">
+                <h4>&#127760; Contact Us</h4>
+                <h3>&#128640; 123 Valparaiso Avenue</h3>
+                <h3>&#127968; Cordoba Argentina</h3>
+                <h3>&#9742; 0800-222-1234</h3>
+                <h3>&#128232; contact-us@whatwonderweather.com</h3>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p id="box-footer">
+            &copy;<span id="currentYear"></span> | Victor Daniel Gauna | Argentina |
+            <a id="byui" href="https://www.byui.edu/online">BYUI</a> Online Learning |
+        </p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <a href="https://www.flaticon.es/iconos-gratis/youtube" title="youtube iconos">Youtube iconos creados por Fathema Khanom - Flaticon</a>
+        <a href="https://www.flaticon.es/iconos-gratis/gorjeo" title="gorjeo iconos">Gorjeo iconos creados por Md Tanvirul Haque - Flaticon</a>
+        <a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook iconos">Facebook iconos creados por Pixel perfect - Flaticon</a>
+        <a href="https://www.flaticon.es/iconos-gratis/scooter" title="scooter iconos">Scooter iconos creados por Good Ware - Flaticon</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Lato", "Oswald", "Koulen"],
+            },
+        });
+    </script>
+    <script src="../finalproject/js/toggleMenu.js"></script>
+    <script src="../finalproject/js/currentDate.js"></script>
+    <script src="../finalproject/js/weatherapi.js"></script>
+
+</body>
+
+</html>
