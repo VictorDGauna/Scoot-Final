@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Final Project -Scoots- by Victor Daniel Gauna">
+    <link rel="stylesheet" href="../finalproject/css/normalize.css">
+    <link rel="stylesheet" href="../finalproject/css/small.css">
+    <link rel="stylesheet" href="../finalproject/css/medium.css">
+    <link rel="stylesheet" href="../finalproject/css/large.css">
+    <link rel="icon" href="../finalproject/img/scooter.png">
+    <title>Scoots</title>
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="../finalproject/img/scooter.png" alt="icon">
+
+            <div class="box-text">
+
+                <h1>Scoots</h1>
+                <h3>Rent Your Adventur</h3>
+            </div>
+        </picture>
+        <div class="call-action">
+            <h2>What Are You Waiting For Your Adventure?</h2>
+            <a href="#"> Click and Rent Now!!</a>
+        </div>
+
+        <ul>
+            <li>
+                <a href="https//:www.facebook.com"><img src="../finalproject/img/facebook (1).png" alt="facebook"></a>
+                <a href="htpps//:www.youtube.com"><img src="../finalproject/img/youtube (1).png" alt="youtube"></a>
+                <a href="https//:www.twitter.com"><img src="../finalproject/img/gorjeo.png" alt="twitter"></a>
+            </li>
+        </ul>
+    </header>
+    <nav class="clearfix">
+        <button id="menuBtn">&#9776; Menu</button>
+        <ul id="primaryNav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="../finalproject/rental.html">Rentals</a></li>
+            <li><a href="../finalproject/reservation.html">Reservations</a></li>
+            <li><a href="../finalproject/tour.html">Tours</a></li>
+            <li><a href="../finalproject/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="banner">
+            <picture>
+
+                <source media="(min-width:500px) and (max-width:799px)" srcset="../finalproject/img/cazumel-medium.png">
+                <source media="(min-width:800px)" srcset="../finalproject/img/cazumel-large.png">
+
+                <img src="../finalproject/img/cazumel-small.png" alt="banner" class="banner-img">
+
+            </picture>
+            <div class="weatherSumary">
+                <h3><span id="city-name"></span></h3>
+                <ul>
+                    <li>Currently: <span id="desc"></span></li>
+                    <li>High: <span id="High"></span> °F</li>
+                    <li>Wind Chill: <span id="wind"></span> °F</li>
+                    <li>Humidity: <span id="hum"></span>%</li>
+                    <li>Wind Speed: <span id="speed"></span> mph</li>
+                </ul>
+
+
+            </div>
+        </section>
+        <section class="sum">
+            <picture class="summary">
+                <h3>Rental Type</h3>
+                <ul>
+                    <li><a href="#">Honda Metro Scooter</a></li>
+                    <li><a href="#">Honda Dio Scooter</a></li>
+                    <li><a href="#">Honda PCX150 Scooter</a></li>
+                    <li><a href="#">Honda Pioneer ATV</a></li>
+                    <li><a href="#">Jeep Wrangler—4 door with a/c</a></li>
+                    <li><a href="#">Jeep Wrangler—2 door</a></li>
+                </ul>
+
+
+            </picture>
+
+            <div class="scoot-card">
+                <h3>Scoots</h3>
+                <hr>
+                <img src="../finalproject/img/scoot-402.png" alt="scooter-zz">
+                <p>~Scoots is a fictitious 🛵 motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, enthusiasts, and cruise-based
+                    touring groups and partnerships. The company has two physical rental locations on Cozumel. One is near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel and the other is near the Terminal Puerta Maya further south along
+                    the coast which caters to the cruise lines and patrons. The company promotes friendly and easy to rent services of motor scooters, jeeps, and side-by-sides ATVs. The overall goal of the website project is to promote the rental services
+                    for those customers that like to do their homework before getting to the island and to provide information about the services, requirements, and rental process. The website should reflect the fun and carefree attitude of the island
+                    and the ability to escape the touristy western part of the island by exploring the vast coasts and inlets on the southern and eastern shores.</p>
+            </div>
+        </section>
+        <section class="weatherWeek">
+            <h3>5 Day Forecast</h3>
+            <div id="weatherDay">
+
+                <div>
+                    <h3>Monday</h3>
+                    <!--<img loading="lazy" width="50" src="../lesson-6/images/symbols_weather_clear_sunny.jpg" alt="">-->
+                    <img src="#" alt="" id="icon1">
+                    <span id="high1>71 °F</span>
+                </div>
+                <div>
+                    <h3>Tuesday</h3>
+                    <img src=" # " alt=" " id="icon2 ">
+                    <span id="high2 ">76 °F</span>
+                </div>
+                <div>
+                    <h3>Wednesday</h3>
+                    <img src="# " alt=" " id="icon3 ">
+                    <span id="high3 ">82 °F</span>
+                </div>
+                <div>
+                    <h3>Thursday</h3>
+                    <img src="# " alt=" " id="icon4 ">
+                    <span id="high4 ">70 °F</span>
+                </div>
+                <div>
+                    <h3>Friday</h3>
+                    <img src="# " alt=" " id="icon5 ">
+                    <span id="high5 ">76 °F</span>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p id="box-footer ">
+            &copy;<span id="currentYear "></span> | Victor Daniel Gauna | Argentina |
+            <a id="byui " href="https://www.byui.edu/online ">BYUI</a> Online Learning |
+        </p>
+        <p>Last Updated: <span id="currentDate "></span></p>
+        <a href="https://www.flaticon.es/iconos-gratis/youtube " title="youtube iconos ">Youtube iconos creados por Fathema Khanom - Flaticon</a>
+        <a href="https://www.flaticon.es/iconos-gratis/gorjeo " title="gorjeo iconos ">Gorjeo iconos creados por Md Tanvirul Haque - Flaticon</a>
+        <a href="https://www.flaticon.es/iconos-gratis/facebook " title="facebook iconos ">Facebook iconos creados por Pixel perfect - Flaticon</a>
+        <a href="https://www.flaticon.es/iconos-gratis/scooter " title="scooter iconos ">Scooter iconos creados por Good Ware - Flaticon</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js "></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Lato ", "Oswald ", "Koulen "],
+            },
+        });
+    </script>
+    <script src="../finalproject/js/toggleMenu.js "></script>
+    <script src="../finalproject/js/currentDate.js "></script>
+    <script src="../finalproject/js/weatherapi.js "></script>
+
+</body>
+
+</html>

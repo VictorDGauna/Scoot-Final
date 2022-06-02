@@ -1,0 +1,368 @@
+    /* All terminals*/
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    /* ------------------------------START - HEADER-----------------*/
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: aliceblue;
+        justify-content: space-between;
+    }
+    
+    picture {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header img {
+        max-width: 150px;
+        height: auto;
+        margin-left: 1rem;
+    }
+    
+    .box-text {
+        text-align: center;
+        margin-left: .5rem;
+        padding-top: 1rem;
+        font-family: "koules", sans-serif;
+    }
+    
+    header ul {
+        padding-right: 1.5rem;
+        list-style-type: none;
+        margin-top: 2rem;
+    }
+    
+    header ul li a img {
+        max-width: 70px;
+    }
+    
+    header ul li a img:hover {
+        box-shadow: 0 2px 15px wheat;
+    }
+    
+    .call-action {
+        background-color: orange;
+        color: black;
+        text-align: center;
+        padding: 0;
+        max-width: max-content;
+        max-height: 7rem;
+        margin-top: 2rem;
+        border-radius: 1ch;
+    }
+    
+    .call-action:hover {
+        box-shadow: 0 2px 15px #fff;
+    }
+    /* ------------------------------END - HEADER-----------------*/
+    /* ------------------------------START - NAV*------------------*/
+    
+    nav button {
+        background: transparent;
+        border: none;
+        color: wheat;
+    }
+    
+    nav {
+        text-align: center;
+        box-shadow: 0 2px 15px gray;
+        background-color: #031736;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        font-style: normal;
+        text-decoration: none;
+        font-size: small;
+        font-family: "Lato", sans-serif;
+        background: linear-gradient(90deg, transparent, orange, transparent) top / var( --d, 0) 10px no-repeat;
+        transition: 0.5s;
+    }
+    
+    nav ul li a:hover {
+        background-color: #bbb;
+        color: #021a08;
+        --d: 100%;
+    }
+    
+    nav ul li.active a {
+        color: red;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    nav ul.open {
+        display: block;
+    }
+    
+    nav ul.open li a:hover {
+        background-color: #bbb;
+        color: #021a08;
+        --d: 100%;
+    }
+    /* -----------------------------END - NAV------------------------*/
+    /* -----------------------------START - MAIN------------------------*/
+    
+    .banner img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .weatherSumary {
+        margin-top: .3rem;
+        width: 100%;
+        text-align: center;
+        height: 10rem;
+        background: rgba(0, 0, 0, 0.8);
+        color: azure;
+    }
+    
+    .weatherSumary:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .weatherSumary ul {
+        padding: 0;
+    }
+    
+    .weatherSumary ul li {
+        list-style: none;
+        border-style: solid;
+        border-width: 1px;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .weatherSumary ul li:hover {
+        background-color: rgb(185, 21, 21);
+        transform: translateX(10px);
+    }
+    
+    .summary {
+        background-color: aqua;
+        text-align: center;
+        width: 90%;
+        margin: 2ch;
+        border-radius: 1ch;
+    }
+    
+    .sum picture {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sum picture ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 1ch;
+    }
+    
+    .sum picture ul li {
+        border-bottom: solid 2px black;
+        padding-bottom: 1rem;
+    }
+    
+    .sum picture ul li a {
+        text-decoration: none;
+        color: red;
+        font-size: 3ch;
+    }
+    
+    .sum picture ul li a:hover {
+        font-size: 4ch;
+        color: black;
+    }
+    
+    .cards-cozumel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .scoot-card {
+        margin: 1rem;
+        background-color: #1F87FF;
+        border-radius: 1ch;
+        text-align: center;
+        max-width: 700px;
+        height: min-content;
+        padding: 2ch;
+    }
+    
+    .scoot-card2,
+    .scoot-card3,
+    .scoot-card4,
+    .scoot-card5 {
+        margin: 1rem;
+        background-color: #1F87FF;
+        border-radius: 1ch;
+        text-align: center;
+        min-width: 30%;
+        max-width: min-content;
+        height: min-content;
+        padding: 2ch;
+    }
+    
+    .scoot-card h3 {
+        font-size: 40px;
+    }
+    
+    .scoot-card img {
+        max-width: 100%;
+        float: left;
+    }
+    
+    .scoot-card2 img,
+    .scoot-card3 img,
+    .scoot-card4 img,
+    .scoot-card5 img {
+        width: 70%;
+        height: 200px;
+        float: left;
+    }
+    
+    .weatherWeek {
+        display: block;
+        margin: 0;
+        margin-bottom: 1rem;
+        background-color: rgb(156, 248, 246);
+    }
+    
+    .weatherWeek h3 {
+        text-align: center;
+    }
+    
+    #weatherDay {
+        /*margin: 0 auto;
+        width: 700px;*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        color: #05386b;
+    }
+    
+    #weatherDay div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 0.3rem;
+        margin-bottom: 3%;
+        color: #000;
+        font-family: sans-serif;
+        border-radius: 1rem;
+        box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    }
+    
+    #weatherDay div:hover {
+        transform: translateX(5px);
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        padding: 10px;
+        border-radius: 1rem;
+        text-align: left;
+        color: #eee;
+        background-color: #05386b;
+        font-size: x-small;
+    }
+    
+    #map {
+        width: auto;
+        height: auto;
+        margin: auto 5%;
+        float: left;
+    }
+    
+    .contact-us {
+        grid-column: 2;
+        margin: auto;
+    }
+    
+    .contact-us h4 {
+        text-align: center;
+    }
+    
+    .reser {
+        text-align: center;
+    }
+    
+    form {
+        margin: 0 15%;
+        text-align: center;
+    }
+    
+    label {
+        margin: 1rem 0;
+    }
+    
+    form fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+    /* -----------------------------END - MAIN------------------------*/
+    /* -----------------------------START - FOOTER------------------------*/
+    
+    footer {
+        margin-top: 1rem;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: wheat;
+    }
+    /*-----------------Clearfix: force an element not to collapse-------*/
+    
+    .clearfix {
+        font-size: .9em;
+        letter-spacing: 2pt;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin-top: 0;
+    }
+    
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .clearfix a {
+        display: block;
+        padding: 0.75rem;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: 100;
+    }
