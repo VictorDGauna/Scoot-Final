@@ -1,9 +1,7 @@
 let date = new Date();
-let currentYear = date.getFullYear();
+var options = { day:'numeric', month: 'long', year: 'numeric'};
 
-
-let lastModified = document.lastModified;
-document.getElementById('currentDate').textContent = lastModified;
+document.getElementById('currentDate').textContent = date.toLocaleDateString("en-US", options);
 
 /*-----fraiday banner-------*/
 if (date.getDay() === 4) {
