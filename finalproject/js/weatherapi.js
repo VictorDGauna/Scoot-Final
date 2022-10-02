@@ -1,9 +1,9 @@
-//const apiURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dce9526fd98f1b67e5a066b73747e133';
+const apiURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dce9526fd98f1b67e5a066b73747e133';
 //http://api.openweathermap.org/data/2.5/forecast?lat=20.6274&lon=-87.0799&units=imperial&appid=dce9526fd98f1b67e5a066b73747e133
 function severity(rating) {
     document.getElementById("value").innerHTML = rating;
 }
-fetch('http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dce9526fd98f1b67e5a066b73747e133')
+fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
